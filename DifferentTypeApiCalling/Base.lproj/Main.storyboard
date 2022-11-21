@@ -60,6 +60,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="JsonApi">
                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="muN-Fb-ofK" kind="show" id="dVu-5Z-EOB"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="ContentType:application/json; charset=utf-8" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bA-e7-3Xc">
                                 <rect key="frame" x="19" y="421.66666666666669" width="355" height="19"/>
@@ -122,6 +125,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jV0-px-nfQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1707.6335877862596" y="-27.464788732394368"/>
+        </scene>
+        <!--JsonApi-->
+        <scene sceneID="NVn-Ut-kgB">
+            <objects>
+                <viewController id="muN-Fb-ofK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GJX-hG-lI9">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Cig-jp-rsA">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="muN-Fb-ofK" id="Eql-Af-uVg"/>
+                                    <outlet property="delegate" destination="muN-Fb-ofK" id="lwH-ES-0BY"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OsJ-yC-VE1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Cig-jp-rsA" firstAttribute="leading" secondItem="OsJ-yC-VE1" secondAttribute="leading" id="1Fd-r1-9ma"/>
+                            <constraint firstItem="OsJ-yC-VE1" firstAttribute="trailing" secondItem="Cig-jp-rsA" secondAttribute="trailing" id="aMD-vc-QtT"/>
+                            <constraint firstItem="Cig-jp-rsA" firstAttribute="top" secondItem="OsJ-yC-VE1" secondAttribute="top" id="lUF-Aj-cXz"/>
+                            <constraint firstItem="OsJ-yC-VE1" firstAttribute="bottom" secondItem="Cig-jp-rsA" secondAttribute="bottom" id="waz-En-9BN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="JsonApi" id="eM9-DA-mJC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qfw-ol-i8M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2349" y="-27"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Qs3-s4-Pw3">
