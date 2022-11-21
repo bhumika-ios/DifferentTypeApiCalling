@@ -22,6 +22,7 @@
 		ACD0AE9B292B88CE00597558 /* UserCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0AE99292B88CE00597558 /* UserCellTableViewCell.swift */; };
 		ACD0AE9C292B88CE00597558 /* UserCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACD0AE9A292B88CE00597558 /* UserCellTableViewCell.xib */; };
 		ACD0AE9F292B8A1C00597558 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = ACD0AE9E292B8A1C00597558 /* Alamofire */; };
+		ACD0AEA1292B8AA200597558 /* SecondApiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0AEA0292B8AA200597558 /* SecondApiViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		ACD0AE92292B883B00597558 /* UModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UModel.swift; sourceTree = "<group>"; };
 		ACD0AE99292B88CE00597558 /* UserCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellTableViewCell.swift; sourceTree = "<group>"; };
 		ACD0AE9A292B88CE00597558 /* UserCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCellTableViewCell.xib; sourceTree = "<group>"; };
+		ACD0AEA0292B8AA200597558 /* SecondApiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondApiViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 			children = (
 				ACD0AE99292B88CE00597558 /* UserCellTableViewCell.swift */,
 				ACD0AE9A292B88CE00597558 /* UserCellTableViewCell.xib */,
+				ACD0AEA0292B8AA200597558 /* SecondApiViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				ACD0AE70292B7DB400597558 /* ViewController.swift in Sources */,
 				ACD0AE83292B826C00597558 /* Service.swift in Sources */,
 				ACD0AE88292B829D00597558 /* MovieModel.swift in Sources */,
+				ACD0AEA1292B8AA200597558 /* SecondApiViewController.swift in Sources */,
 				ACD0AE6C292B7DB400597558 /* AppDelegate.swift in Sources */,
 				ACD0AE8C292B838600597558 /* MovieViewModel.swift in Sources */,
 				ACD0AE6E292B7DB400597558 /* SceneDelegate.swift in Sources */,
