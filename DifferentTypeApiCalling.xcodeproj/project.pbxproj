@@ -17,6 +17,8 @@
 		ACD0AE88292B829D00597558 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0AE87292B829D00597558 /* MovieModel.swift */; };
 		ACD0AE8A292B831600597558 /* FirstApiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0AE89292B831600597558 /* FirstApiViewController.swift */; };
 		ACD0AE8C292B838600597558 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0AE8B292B838600597558 /* MovieViewModel.swift */; };
+		ACD0AE90292B881300597558 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0AE8F292B881300597558 /* UserViewModel.swift */; };
+		ACD0AE93292B883B00597558 /* UModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD0AE92292B883B00597558 /* UModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		ACD0AE87292B829D00597558 /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 		ACD0AE89292B831600597558 /* FirstApiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstApiViewController.swift; sourceTree = "<group>"; };
 		ACD0AE8B292B838600597558 /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
+		ACD0AE8F292B881300597558 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		ACD0AE92292B883B00597558 /* UModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 		ACD0AE6A292B7DB400597558 /* DifferentTypeApiCalling */ = {
 			isa = PBXGroup;
 			children = (
+				ACD0AE8D292B87D200597558 /* SecondApi */,
 				ACD0AE7F292B820D00597558 /* firstApi */,
 				ACD0AE6B292B7DB400597558 /* AppDelegate.swift */,
 				ACD0AE6D292B7DB400597558 /* SceneDelegate.swift */,
@@ -115,6 +120,31 @@
 			isa = PBXGroup;
 			children = (
 				ACD0AE87292B829D00597558 /* MovieModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ACD0AE8D292B87D200597558 /* SecondApi */ = {
+			isa = PBXGroup;
+			children = (
+				ACD0AE91292B882800597558 /* Model */,
+				ACD0AE8E292B87F700597558 /* Controller */,
+			);
+			path = SecondApi;
+			sourceTree = "<group>";
+		};
+		ACD0AE8E292B87F700597558 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ACD0AE8F292B881300597558 /* UserViewModel.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		ACD0AE91292B882800597558 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ACD0AE92292B883B00597558 /* UModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -191,6 +221,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACD0AE8A292B831600597558 /* FirstApiViewController.swift in Sources */,
+				ACD0AE90292B881300597558 /* UserViewModel.swift in Sources */,
+				ACD0AE93292B883B00597558 /* UModel.swift in Sources */,
 				ACD0AE70292B7DB400597558 /* ViewController.swift in Sources */,
 				ACD0AE83292B826C00597558 /* Service.swift in Sources */,
 				ACD0AE88292B829D00597558 /* MovieModel.swift in Sources */,
