@@ -129,7 +129,7 @@
         <!--JsonApi-->
         <scene sceneID="NVn-Ut-kgB">
             <objects>
-                <viewController id="muN-Fb-ofK" sceneMemberID="viewController">
+                <viewController id="muN-Fb-ofK" customClass="SecondApiViewController" customModule="DifferentTypeApiCalling" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GJX-hG-lI9">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -153,6 +153,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="JsonApi" id="eM9-DA-mJC"/>
+                    <connections>
+                        <outlet property="tblView" destination="Cig-jp-rsA" id="uBW-3j-eIx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qfw-ol-i8M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

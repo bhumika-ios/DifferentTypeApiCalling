@@ -9,6 +9,7 @@ import UIKit
 
 class SecondApiViewController: UIViewController {
 
+    @IBOutlet var tblView: UITableView!
     var viewModelUser = UserViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +17,7 @@ class SecondApiViewController: UIViewController {
         // Do any additional setup after loading the view.
         viewModelUser.getAllUserDataAF()
       //  tblView.register(UserCell.self, forCellReuseIdentifier: "UserCell")
-        tblView.register(UINib(nibName: "UserCell", bundle: nil), forCellReuseIdentifier: "UserCell")        // Do any additional setup after loading the view.
+        tblView.register(UINib(nibName: "UserCellTableViewCell", bundle: nil), forCellReuseIdentifier: "UserCellTableViewCell")        // Do any additional setup after loading the view.
     }
     
 
@@ -36,7 +37,7 @@ extension SecondApiViewController: UITableViewDataSource{
         viewModelUser.arrUser.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tblView.dequeueReusableCell(withIdentifier: "UserCell", for: indexPath) as? UserCell
+        let cell = tblView.dequeueReusableCell(withIdentifier: "UserCellTableViewCell", for: indexPath) as? UserCellTableViewCell
         let modelUser = viewModelUser.arrUser[indexPath.row]
         cell?.modelUser = modelUser
 
