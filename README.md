@@ -18,16 +18,24 @@ github "Alamofire/Alamofire"
 Swift Package Manager
 The Swift Package Manager is a tool for automating the distribution of Swift code and is integrated into the swift compiler.
 Once you have your Swift package set up, adding Alamofire as a dependency is as easy as adding it to the dependencies value of your Package.swift.
+
 dependencies: [
     .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "5.6.1"))
 ]
+
+
 Manually
 If you prefer not to use any of the aforementioned dependency managers, you can integrate Alamofire into your project manually.
 Embedded Framework
+
 Open up Terminal, cd into your top-level project directory, and run the following command "if" your project is not initialized as a git repository:
+
 $ git init
+
 Add Alamofire as a git submodule by running the following command:
+
 $ git submodule add https://github.com/Alamofire/Alamofire.git
+
 Open the new Alamofire folder, and drag the Alamofire.xcodeproj into the Project Navigator of your application's Xcode project.
 
 It should appear nested underneath your application's blue project icon. Whether it is above or below all the other Xcode groups does not matter.
